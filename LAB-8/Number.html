@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number</title>
+    <style>
+      .text {
+        font-size: 1rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text">
+      <h1 class="TITLE">Java built in object Number:</h1>
+      <h3 class="fun">Expontial Function:</h3>
+      <script type="text/javascript">
+        var num = 92.3478;
+        var val = num.toExponential();
+        document.write("num.toExponential() is : " + val);
+        document.write("<br />");
+
+        val = num.toExponential(4);
+        document.write("num.toExponential(4) is : " + val);
+        document.write("<br />");
+
+        val = num.toExponential(2);
+        document.write("num.toExponential(2) is : " + val);
+        document.write("<br />");
+
+        val = (66.14).toExponential();
+        document.write("77.1234.toExponential()is : " + val);
+        document.write("<br />");
+
+        val = (77.1234).toExponential();
+        document.write("77 .toExponential() is : " + val);
+        document.write("<br />");
+      </script>
+      <h3 class="fun">Precision Function:</h3>
+      <script type="text/javascript">
+        var num = new Number(88.57428);
+        document.write("num.toPrecision() is " + num.toPrecision());
+        document.write("<br />");
+
+        document.write("num.toPrecision(4) is " + num.toPrecision(4));
+        document.write("<br />");
+
+        document.write("num.toPrecision(2) is " + num.toPrecision(2));
+        document.write("<br />");
+
+        document.write("num.toPrecision(1) is " + num.toPrecision(1));
+      </script>
+    </div>
+  </body>
+</html>
