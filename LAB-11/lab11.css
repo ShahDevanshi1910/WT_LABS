@@ -1,0 +1,29 @@
+.surat{
+    margin: auto;
+    background-image: url("businessCenter.jpeg");
+    width: 70%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center cover;
+    border: 3px solid black;
+}
+
+.ahmedabad{
+    margin: auto;
+    background-image: url("kankaria-lake-banner.jpeg");
+    width: 70%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center cover;
+    border: 3px solid black;
+}
+
+.rajkot{
+    margin: auto;
+    background-image: url("Rajkot.jpeg");
+    width: 70%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center cover;
+    border: 3px solid black;
+}

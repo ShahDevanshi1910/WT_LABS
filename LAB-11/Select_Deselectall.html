@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compulsory two selection</title>
+    <script type="text/javascript">
+function selectAll()
+{
+    let sportscheck = document.getElementsByName("sportscheck");
+    let sportscheckLen = sportscheck.length;
+    for(var x =0; x<sportscheckLen;x++)
+    {
+        sportscheck[x].checked=true;
+    }
+}
+
+function deselectAll()
+{
+    let sportscheck = document.getElementsByName("sportscheck");
+    let sportscheckLen = sportscheck.length;
+    for(var x =0; x<sportscheckLen;x++)
+    {
+        sportscheck[x].checked=false;
+    }
+}
+    </script>
+
+</head>
+<body>
+    <input type="button" onclick="selectAll()" value="Select All">
+    <input type="button" onclick="deselectAll()" value="Deselect All"><br>
+    <input type="checkbox" name="sportscheck" value="Badminton">Badminton<br>
+    <input type="checkbox" name="sportscheck" value="Chess">Chess<br>
+    <input type="checkbox" name="sportscheck" value="Tug of war">Tug of war<br>
+    <input type="checkbox" name="sportscheck" value="Vollyball">Vollyball<br>
+    <input type="checkbox" name="sportscheck" value="Cricket">Cricket<br>
+    <input type="checkbox" name="sportscheck" value="Carrom">Carrom<br>
+</body>
+</html>
