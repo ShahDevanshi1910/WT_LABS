@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rescue Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*CSS RESET*/
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('BG1.jpg');
+            font-family: Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .left {
+            position: absolute;
+            left: 1388px;
+            top: 70px;
+            display: inline-block;
+        }
+        .left img {
+            border-radius: 15px;
+            width: 120px;
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .Buttons {
+            display: block;
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid gold;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            color: white;
+            display: inline-block;
+            font-size: 15px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 20px 20px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: gray;
+        }
+        .container {
+            position: absolute;
+            left: -30px;
+            top: -12px;
+            display: inline-block;
+            border: 2px solid black;
+            margin: 80px 80px;
+            width: 20%;
+            border-radius: 28px;
+        }
+        .form-group {
+            text-align: center;
+            display: block;
+            width: 320px;
+            padding: 1px;
+            border-radius: 20px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+        }
+        .container h1 {
+            text-align: center;
+        }
+        .container h3{
+            text-align: center;
+        }
+        .container button {
+            text-align: center;
+            display: block;
+            width: 30%;
+            margin: auto;
+        }
+        .social{
+            margin: -20px;
+            padding: 0px;
+            position: absolute;
+            left: 780px;
+            width: 100px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="Logo.jpg" alt="">
+            <div>Donate Life</div>
+        </div>
+        <div class="Buttons">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Pets</a></li>
+                <li><a href="#">Adoption Fees</a></li>
+                <li><a href="#">Donation</a></li>
+            <div class = "social">
+                    <a href="#">
+                        <i class = "fa fa-facebook"> </i>
+                    </a>
+                    <a href="#">
+                        <i class = "fa fa-instagram"> </i>
+                    </a>
+                    <a href="#">
+                        <i class = "fa fa-youtube"> </i>
+                    </a>
+            </div>    
+        </div>
+        <div class="container">
+            <h1>The Rescue Team Of Petlad</h1>
+            <h3>Contact Us</h3>
+            <form action="noaction.php">
+                <div class="Radius">
+                    <div class="form-group">
+                        <input type="text" name=" " placeholder="Enter Your Name">
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name=" " placeholder="Enter The Subject">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name=" " placeholder="Enter The Message">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name=" " placeholder="Enter Your Contact Number">  
+                    </div>
+                    <button class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+</body>
+</html>
