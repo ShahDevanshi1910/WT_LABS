@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selected Ckeckbox</title>
+    <script type="text/javascript">
+      function selectAll() {
+        let sport = document.getElementsByName("sport");
+        let sportLen = sport.length;
+        for (var x = 0; x < sportLen; x++) {
+          sport[x].checked = true;
+        }
+      }
+      function deselectAll() {
+        let sport = document.getElementsByName("sport");
+        let sportLen = sport.length;
+        for (var x = 0; x < sportLen; x++) {
+          sport[x].checked = false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h4>Your favourite sports?</h4>
+    Cricket:
+    <input type="checkbox" id="check1" name="sport" value="Cricket" />
+    <br />
+    Football:
+    <input type="checkbox" id="check2" name="sport" value="Football" />
+    <br />
+    Vollyball:
+    <input type="checkbox" id="check3" name="sport" value="Vollyball" />
+    <br />
+    Hokey: <input type="checkbox" id="check4" name="sport" value="Hokey" />
+    <br />
+    Badminton:
+    <input type="checkbox" id="check5" name="sport" value="Badminton" /> <br />
+    <br />
+    <br />
+    <input type="button" onclick="selectAll()" value="Select All" /> <br />
+    <input type="button" onclick="deselectAll()" value="Deselect All" /><br />
+    <button id="btn">Submit</button>
+    <br />
+    <h4 style="color: green" id="result"></h4>
+    <br />
+    <script>
+      document.getElementById("btn").onclick = function () {
+        var markedCheckbox = document.getElementsByName("sport");
+        for (var checkbox of markedCheckbox) {
+          if (checkbox.checked) document.body.append(checkbox.value + " ");
+        }
+      };
+    </script>
+  </body>
+</html>

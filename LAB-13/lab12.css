@@ -1,0 +1,39 @@
+.surat {
+  margin: auto;
+  background-image: url("surat.jpg");
+  width: 70%;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center cover;
+  border: 3px solid black;
+}
+
+.vadodra {
+  margin: auto;
+  background-image: url("businessCenter.jpeg");
+  width: 70%;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center cover;
+  border: 3px solid black;
+}
+
+.nadiad {
+  margin: auto;
+  background-image: url("nadiad.jpg");
+  width: 70%;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center cover;
+  border: 3px solid black;
+}
+
+.anand {
+  margin: auto;
+  background-image: url("anand.jpg");
+  width: 70%;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center cover;
+  border: 3px solid black;
+}
